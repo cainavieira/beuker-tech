@@ -1,0 +1,12 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "data": "date",
+    "tipo-tech": "multitext",
+    "atualizado": "text",
+    "conceito": "text",
+    "objetivo": "text"
+  }
+}

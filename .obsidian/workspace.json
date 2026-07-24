@@ -1,0 +1,235 @@
+{
+  "main": {
+    "id": "c9e1c43c8981abbb",
+    "type": "split",
+    "children": [
+      {
+        "id": "5997fa4ab7d2d0ac",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3caa09c4f0340219",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dd3352b4fe5699b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "11c6f70b54c32972",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fbd2595173a27b20",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "e8136452181e650a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4378d89d58934233",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b17852089b58122f",
+    "type": "split",
+    "children": [
+      {
+        "id": "34fd383d010c2a44",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "050c8f24b92b5097",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notas-diarias/2026-07-09.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 2026-07-09"
+            }
+          },
+          {
+            "id": "c06f44bf41257206",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "notas-diarias/2026-07-09.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 2026-07-09"
+            }
+          },
+          {
+            "id": "fa0940c99f4f724e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "08734c86d30b0ba9",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "bb4a6681fbd43aaa",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notas-diarias/2026-07-09.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 2026-07-09"
+            }
+          },
+          {
+            "id": "3c75de11a8abcddd",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "fbd2595173a27b20",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "CLAUDE.md.tmp.23400.bf4798f8ffcd",
+    "README.md.tmp.23400.bc85f4175f75",
+    "README.md.tmp.23400.02c2bf6331d8",
+    "MOC Livros.md",
+    "moc areas/Produtividade.md",
+    "moc areas/IA.md",
+    "moc areas/DevOps.md",
+    "CLAUDE.md",
+    "tech-study-diario/Organizaçao no obsidian.md",
+    "conceitos/Obsidian.md",
+    "tech-study-diario/Organizaçao no obsidian.md.tmp.23400.5cf794fb3d86",
+    "templates/template-tech-study.md",
+    "CLAUDE.md.tmp.23400.9b4f236d21f2",
+    "templates/template-tech-study.md.tmp.23400.eb5970786107",
+    "templates/Template nota bruta tech.md",
+    "tech-study-diario/Organizaçao no obsidian.md.tmp.23400.a039d8eef072",
+    "tech-study-diario/Organizaçao no obsidian.md.tmp.23400.91e0a533aa84",
+    "moc areas/IA.md.tmp.23400.c8ae13c5d274",
+    "conceitos/Azure DevOps.md.tmp.23400.bb21ba5e7a78",
+    "templates/Template capítulo.md",
+    "conceitos/Claude IA.md",
+    "conceitos/Claude.md",
+    "templates/Template conceito.md",
+    "conceitos/Azure DevOps.md",
+    "nota bruta tech.md",
+    "README.md",
+    "SKILL gerar epic.md",
+    "templates/Template livro.md",
+    "templates/Template moc area.md",
+    "Objetivos Tech Pessoal.md",
+    "notas-diarias/2026-07-11.md",
+    "notas-diarias/2026-07-09.md",
+    "notas-diarias/2026-07-10.md",
+    "notas-diarias/202.md",
+    "Untitled 1.md",
+    "Pasted image 20260710002929.png",
+    "Untitled.canvas"
+  ]
+}
