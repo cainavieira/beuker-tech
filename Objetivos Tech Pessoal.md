@@ -7,7 +7,7 @@ tags:
 
 # 🎯 Objetivos do Tech Pessoal
 
-> Nota fixa. Aqui ficam os **objetivos de longo prazo**,  o "aonde quero chegar". Não são tarefas do dia. Quando um objetivo amadurece e vira algo que dá pra fazer essa semana, eu crio/atualizo a nota de [[]] (conceito) e registro o trabalho concreto numa nota tech-study.
+%% Nota fixa. Aqui ficam os **objetivos de longo prazo**, o "aonde quero chegar" — não são tarefas do dia. Quando um objetivo amadurece e vira algo que dá pra fazer essa semana, eu crio/atualizo a nota de conceito e registro o trabalho concreto numa nota tech-study. %%
 
 ## 🗂️ Áreas
 

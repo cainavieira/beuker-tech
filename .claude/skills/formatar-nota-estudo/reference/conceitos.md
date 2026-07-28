@@ -10,14 +10,17 @@ qual é, em vez de escolher sozinho.
 
 ## Conceito já existe
 
-- Apenas linke: no corpo da nota tech-study (seção "O que estudei hoje") e no
-  frontmatter `conceito:` (primeiro da lista do bruto = principal).
+- Apenas linke: no corpo da nota tech-study (seção 📚 "O que estudei hoje") e
+  na lista `conceito:` do frontmatter — **todos** os conceitos tocados entram
+  nessa lista, o principal (primeiro do bruto) na primeira posição.
 - **Nunca edite o arquivo do conceito.** As seções "O que é isso", "Por que
   estou estudando isso", "Recursos" e "Notas soltas / dúvidas" são
   processamento pessoal do usuário, escritas com as próprias palavras dele —
   a skill nunca escreve nelas.
-- Não mexa em "Dias de estudo" — o backlink automático do Obsidian a partir da
-  nota tech-study já resolve isso.
+- Não crie na nota de conceito nenhuma lista de sessões, histórico ou "dias de
+  estudo": o link `[[Conceito]]` no frontmatter da nota tech-study já faz o
+  Obsidian mostrar toda sessão no painel de Backlinks do conceito,
+  automaticamente. Lista manual só duplicaria isso e ficaria desatualizada.
 
 ## Conceito não existe
 
@@ -46,8 +49,9 @@ qual é, em vez de escolher sozinho.
 
 ## Múltiplos conceitos
 
-- A ordem de escrita no bruto é a prioridade — o primeiro item é o conceito
-  principal e vai no frontmatter `conceito:` da nota tech-study; os demais
-  entram como links adicionais em "O que estudei hoje".
+- A ordem de escrita no bruto é a prioridade. Todos os conceitos entram na
+  lista `conceito:` do frontmatter **na mesma ordem do bruto**, e todos
+  aparecem como link em 📚 "O que estudei hoje". A primeira posição é o
+  principal: é dele que sai o `id_pai` da nota. Nunca reordene a lista.
 - Cada conceito (principal ou não) passa pela mesma checagem de
   match/criação acima, individualmente.

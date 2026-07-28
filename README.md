@@ -65,6 +65,7 @@ referenciar uma nota específica sem depender de busca por título.
   que citam esse `[[Conceito]]` num único documento — pra jogar a pasta
   compilada inteira no NotebookLM e ter o contexto completo de estudo sobre
   aquele tema.
+- "Ver um modo de mudar a skill para que caso o nome do tech study diario seja o mesmo ou o texto seja parecido e ele procura isso caso o conceito ja exista entao ele somente edita e aumenta o texto, nao cria um novo"
 
 ## Adaptando pro seu próprio vault
 

@@ -1,53 +1,69 @@
 ---
 tipo: tech-study
-data: {{date}}
+data:
+  "{ date }":
 tags:
   - tech-study
-conceito: "[[]]"
-objetivo: "[[Objetivos Tech Pessoal]]"
-id_obsidian: {{id}}
-id_pai: {{id do conceito principal}}
+conceito:
+  - "[[]]"
+id_obsidian:
+  "{ id }":
+id_pai:
+  "{ id do conceito principal }":
 ---
 
 # 📅 {{title}}
 
-> Cada seção tem sua própria zona `--- INÍCIO AUTO-GERADO --- / --- FIM AUTO-GERADO ---`: só o que está entre os marcadores pode ser escrito/sobrescrito pela skill (ou por uma edição futura pedida via `id_obsidian`). Qualquer coisa que você escrever fora dos marcadores, mesmo dentro da mesma seção, fica intocada.
-
 ## 📚 O que estudei hoje
 
---- INÍCIO AUTO-GERADO ---
+%%--- INÍCIO AUTO-GERADO ---%%
 - [[]] —
---- FIM AUTO-GERADO ---
+%%--- FIM AUTO-GERADO ---%%
+
+%% 📖, 💡 e 🐞 são de formato livre: prosa, lista, ou os dois. %%
+
+## 📖 Conteúdo
+
+%%--- INÍCIO AUTO-GERADO ---%%
+
+%%--- FIM AUTO-GERADO ---%%
 
 ## 💡 Aprendizados / insights
 
---- INÍCIO AUTO-GERADO ---
--
---- FIM AUTO-GERADO ---
+%%--- INÍCIO AUTO-GERADO ---%%
+
+%%--- FIM AUTO-GERADO ---%%
+
+## 🐞 Erros e como resolvi
+
+%%--- INÍCIO AUTO-GERADO ---%%
+
+%%--- FIM AUTO-GERADO ---%%
 
 ## 🧠 Dúvidas / pontos a aprofundar
 
---- INÍCIO AUTO-GERADO ---
--
---- FIM AUTO-GERADO ---
+%%--- INÍCIO AUTO-GERADO ---%%
+- [ ]
+%%--- FIM AUTO-GERADO ---%%
 
 ## 🔗 Recursos usados
 
---- INÍCIO AUTO-GERADO ---
+%%--- INÍCIO AUTO-GERADO ---%%
 -
---- FIM AUTO-GERADO ---
+%%--- FIM AUTO-GERADO ---%%
 
 ## 🔁 Próximos passos
 
---- INÍCIO AUTO-GERADO ---
--
---- FIM AUTO-GERADO ---
+%%--- INÍCIO AUTO-GERADO ---%%
+- [ ]
+%%--- FIM AUTO-GERADO ---%%
 
-## 🗒️ Observações gerais
+## ❓ Autoteste
 
---- INÍCIO AUTO-GERADO ---
--
---- FIM AUTO-GERADO ---
+%%--- INÍCIO AUTO-GERADO ---%%
+> [!question]- Pergunta
+> Resposta.
+%%--- FIM AUTO-GERADO ---%%
 
 ## ✍️ Notas minhas
 

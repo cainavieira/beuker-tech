@@ -39,39 +39,57 @@ MOC Livros.md
   `formatar-nota-estudo` (ver abaixo) é sempre um arquivo novo, nunca edição
   de uma sessão anterior. Toda nota tem `id_obsidian` (ID próprio da sessão)
   e `id_pai` (o `id_obsidian` do conceito principal) no frontmatter, formato
-  `YYYYMMDD-HHMMSS`. **Cada seção** (📚, 💡, 🧠, 🔗, 🔁, 🗒️) tem seu próprio
-  par de marcadores `--- INÍCIO AUTO-GERADO ---` / `--- FIM AUTO-GERADO ---`
-  — não é um bloco único pra nota inteira. Só o miolo entre esse par, dentro
-  de cada seção, pode ser escrito/sobrescrito pela skill; qualquer coisa que
-  o usuário escrever fora dos marcadores, mesmo dentro da mesma seção (ex.:
-  logo abaixo do FIM), fica intocada. A seção `## ✍️ Notas minhas`, sem
-  marcadores, é espaço livre genérico. Se o usuário pedir pra editar uma nota
-  tech-study já existente, encontre-a pelo `id_obsidian` informado (nunca por
-  busca/match de título) e só altere conteúdo dentro do par de marcadores da
-  seção certa.
+  `YYYYMMDD-HHMMSS`. A nota é **material de revisão**, não registro de que a
+  sessão aconteceu: 📖 "Conteúdo" carrega a matéria explicada (📚 é só o
+  escopo) e ❓ "Autoteste" fecha com perguntas de recuperação ativa. Não
+  existe campo de disciplina/aula/semestre de propósito — a origem do
+  aprendizado é irrelevante, só importa o que foi aprendido. **Prosa é formato
+  de primeira classe**, tanto no bruto quanto na nota: é resumo pessoal do
+  usuário, não relatório. Nunca converta tudo em bullet por reflexo, e
+  respeite o registro que ele usou no bruto (prosa continua prosa, tópico
+  continua tópico) — só 📚 (índice) e 🧠/🔁 (checkbox rastreável por busca)
+  têm formato fixo. **Cada seção**
+  (📚, 📖, 💡, 🐞, 🧠, 🔗, 🔁, ❓) tem seu próprio par de marcadores
+  `%%--- INÍCIO AUTO-GERADO ---%%` / `%%--- FIM AUTO-GERADO ---%%` — não é um
+  bloco único pra nota inteira. Os `%%` são comentário do Obsidian: os
+  marcadores desaparecem no modo leitura e sobrevivem no source. Só o miolo
+  entre esse par, dentro de cada seção, pode ser escrito/sobrescrito pela
+  skill; qualquer coisa que o usuário escrever fora dos marcadores, mesmo
+  dentro da mesma seção (ex.: logo abaixo do FIM), fica intocada. A seção
+  `## ✍️ Notas minhas`, sem marcadores, é espaço livre genérico. Seção
+  opcional sem conteúdo real é omitida inteira. Se o usuário pedir pra editar
+  uma nota tech-study já existente, encontre-a pelo `id_obsidian` informado
+  (nunca por busca/match de título) e só altere conteúdo dentro do par de
+  marcadores da seção certa.
 - **`templates/*.md`**: só referência de estrutura (frontmatter + seções).
   Nunca preencher um template com placeholders e deixar assim — o arquivo
   final não pode conter `{{}}`.
 - **`fotos/`**: fotos citadas nas notas brutas, renomeadas
   `foto yyyy-mm-dd hh-mm-ss.ext` pela data do próprio arquivo de imagem.
-  Pasta gitignored (não vale a pena versionar). **Nunca linkadas/embedadas
-  em nenhuma nota** — organização física pura, fora do grafo do Obsidian de
-  propósito.
+  Pasta gitignored (não vale a pena versionar). Foto é **material de
+  estudo**: o conteúdo de toda imagem é lido e vira texto nas seções da nota
+  tech-study. O embed é que é a exceção — só as fotos que o usuário marcou
+  explicitamente no bruto (linha logo abaixo da foto) entram na nota como
+  link markdown `![alt](<fotos/...>)`; as outras ficam só arquivadas, fora do
+  grafo do Obsidian de propósito. Detalhes na skill (`reference/fotos.md`).
 
 ## O fluxo de captura de estudo
 
 1. Durante/depois de estudar, o usuário escreve tudo bruto (texto
-   malformado, fotos) em `nota bruta tech.md` na raiz do vault (nome fixo,
-   case-insensitive, um arquivo por vez — a partir de
-   `templates/Template nota bruta tech.md`).
+   malformado, fotos) em `nota bruta tech.md` na raiz do vault (a primeira
+   nota, sem número — case-insensitive), ou `nota bruta tech 2.md`,
+   `nota bruta tech 3.md`, etc. se houver múltiplas sessões. Cada arquivo é
+   escrito a partir de `templates/Template nota bruta tech.md`.
 2. A skill `formatar-nota-estudo` (`.claude/skills/formatar-nota-estudo/`)
-   compila isso numa nota `tech-study-diario/` formatada, linka/cria
-   conceitos, organiza fotos, e apaga o bruto ao final. O SKILL.md e os
-   arquivos em `reference/` já cobrem as regras de match/criação de
-   conceito, tom de resumo e fotos — não duplicar essas regras aqui.
+   processa **todas as notas brutas** sequencialmente: para cada uma, compila
+   numa nota `tech-study-diario/` formatada, linka/cria conceitos, organiza
+   fotos, e apaga o bruto. O SKILL.md e os arquivos em `reference/` já cobrem
+   as regras de match/criação de conceito, tom de resumo e fotos — não
+   duplicar essas regras aqui.
 3. A ideia central: durante a aula/estudo o usuário só presta atenção e
    despeja informação crua — a formatação bonita fica por conta da skill,
-   não do usuário no calor da hora.
+   não do usuário no calor da hora. Pode ter múltiplas sessões brutas de uma
+   vez; a skill processa todas de puxadinha.
 
 ## Princípios gerais ao editar este vault
 

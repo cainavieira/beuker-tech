@@ -8,16 +8,11 @@ aliases:
 
 # 🗂️ {{title}}
 
-> MOC (Map of Content) da área. Não é pra escrever conteúdo de estudo aqui,  só linkar os conceitos que pertencem a essa área. O conteúdo real fica na nota de cada conceito.
-> Para Backend.md, Frontend.md
+%% MOC (Map of Content) da área: aqui não se escreve conteúdo de estudo, só se linka os conceitos que pertencem a essa área. O conteúdo real fica na nota de cada conceito. Ex.: Backend.md, Frontend.md %%
 
 ## Conceitos ativos
 
-- [[]]
-
 ## Conceitos dominados / revisão
-
-- [[]]
 
 ## Relacionado a
 

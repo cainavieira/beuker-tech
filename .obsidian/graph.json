@@ -6,17 +6,46 @@
   "hideUnresolved": true,
   "showOrphans": false,
   "collapse-color-groups": false,
-  "colorGroups": [],
-  "collapse-display": true,
+  "colorGroups": [
+    {
+      "query": "path:\"moc areas\"  ",
+      "color": {
+        "a": 1,
+        "rgb": 9965226
+      }
+    },
+    {
+      "query": "path:conceitos  ",
+      "color": {
+        "a": 1,
+        "rgb": 14397722
+      }
+    },
+    {
+      "query": "path:tech-study-diario  ",
+      "color": {
+        "a": 1,
+        "rgb": 10226957
+      }
+    },
+    {
+      "query": "file: Objetivos Tech Pessoal",
+      "color": {
+        "a": 1,
+        "rgb": 9813564
+      }
+    }
+  ],
+  "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "collapse-forces": false,
+  "centerStrength": 0.516632016632017,
+  "repelStrength": 11.0810810810811,
   "linkStrength": 1,
-  "linkDistance": 250,
+  "linkDistance": 169,
   "scale": 1,
   "close": true
 }
