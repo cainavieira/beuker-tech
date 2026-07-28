@@ -37,27 +37,30 @@ anota tudo cru, rápido e feio, e a IA formata depois.
 ## Como usar
 
 1. Copie `templates/Template nota bruta tech.md` pra um arquivo chamado
-   `nota bruta tech.md` na raiz do vault.
-2. Preencha os 3 campos: o que você está estudando (palavras-chave), o(s)
-   conceito(s) envolvido(s) (em ordem de importância), e o estudo em si —
-   pode ser texto solto, mal formatado, com fotos coladas, sem
-   preocupação nenhuma com organização.
+   `nota bruta tech.md` na raiz do vault. Se tiver múltiplas sessões de uma
+   vez, crie também `nota bruta tech 2.md`, `nota bruta tech 3.md`, etc.
+2. Preencha os 3 campos em cada arquivo: o que você está estudando
+   (palavras-chave), o(s) conceito(s) envolvido(s) (em ordem de importância),
+   e o estudo em si — pode ser texto solto, mal formatado, com fotos coladas,
+   sem preocupação nenhuma com organização.
 3. Peça pro Claude Code formatar (ele detecta e chama a skill sozinho, ou
-   digite `/formatar-nota-estudo`).
-4. Revise o resultado: uma nota nova em `tech-study-diario/`, conceitos
-   linkados/criados, fotos organizadas em `fotos/`. O arquivo bruto é
-   apagado automaticamente no final — ele não serve pra mais nada depois
-   de compilado.
+   digite `/formatar-nota-estudo`). A skill processa **todas as notas brutas**
+   em sequência: 1ª a sem número, depois a `2`, depois a `3`, etc.
+4. Revise o resultado: uma nota nova em `tech-study-diario/` pra cada bruto,
+   conceitos linkados/criados, fotos organizadas em `fotos/`. Cada arquivo
+   bruto é apagado automaticamente no final — ele não serve pra mais nada
+   depois de compilado.
 
 ## Edição segura (auto-gerado vs. manual)
 
 Toda nota `tech-study-diario/` tem `id_obsidian` (ID único da sessão) e
 `id_pai` (ID do conceito principal) no frontmatter, e cada seção do corpo
-tem seu próprio par de marcadores `--- INÍCIO AUTO-GERADO --- / --- FIM
-AUTO-GERADO ---`. Só o miolo entre esses marcadores é gerado/regravado pela
-IA; qualquer coisa que você escrever fora deles — mesmo dentro da mesma
-seção — fica intocada. Conceitos também têm `id_obsidian`, pra permitir
-referenciar uma nota específica sem depender de busca por título.
+tem seu próprio par de marcadores `%%--- INÍCIO AUTO-GERADO ---%%` / `%%--- FIM
+AUTO-GERADO ---%%` (comentário do Obsidian, desaparece no modo leitura).
+Só o miolo entre esses marcadores é gerado/regravado pela IA; qualquer coisa
+que você escrever fora deles — mesmo dentro da mesma seção — fica intocada.
+Conceitos também têm `id_obsidian`, pra permitir referenciar uma nota
+específica sem depender de busca por título.
 
 ## Próximos passos
 
