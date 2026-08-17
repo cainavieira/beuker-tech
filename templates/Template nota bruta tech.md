@@ -14,7 +14,13 @@
      misturados. Prosa não é problema nenhum — a skill respeita o formato que
      você usou em vez de picar tudo em bullet.
 
-     Fotos: cole onde faz sentido. Toda foto é lida e vira texto na nota.
-     Se quiser que uma foto também apareça embedada na nota final, escreva
-     "salvar" (ou "salvar: legenda da foto") na linha logo abaixo dela. -->
+     Fotos: cole onde faz sentido. Para guardar uma foto na nota final,
+     escreva "salvar" (ou "salvar: legenda da foto") na linha logo abaixo
+     dela. Foto sem essa marcação é apagada depois de compilar.
+
+     O que a marcação faz depende da skill:
+     - formatar-nota-estudo: toda foto vira texto na nota, marcada ou não.
+       "salvar" só decide se ela TAMBÉM fica embedada como imagem.
+     - formatar-anotacoes: "salvar" embeda a imagem e não escreve nada sobre
+       ela; sem marcação, a foto é explicada em texto e o arquivo apagado. -->
 

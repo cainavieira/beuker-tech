@@ -1,15 +1,12 @@
 ---
 tipo: tech-study
-data:
-  "{ date }":
+data: YYYY-MM-DD
 tags:
   - tech-study
 conceito:
   - "[[]]"
-id_obsidian:
-  "{ id }":
-id_pai:
-  "{ id do conceito principal }":
+id_obsidian: YYYYMMDD-HHMMSS
+id_pai: YYYYMMDD-HHMMSS
 ---
 
 # 📅 {{title}}
