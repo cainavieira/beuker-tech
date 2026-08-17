@@ -21,6 +21,15 @@ MOC Livros.md
        └─ capítulo (template: Template capítulo.md)
 ```
 
+E uma terceira, pra anotação literal (não-estudo — ver skill
+`formatar-anotacoes` abaixo), que pendura em `conceitos/` do mesmo jeito que
+`tech-study-diario/`:
+
+```
+conceitos/<Conceito>.md
+  └─ anotacoes-tech/<anotação>.md   (template: template-tech-notes.md)
+```
+
 ## Regras de conteúdo (importantes, não óbvias)
 
 - **`moc areas/*.md`**: só listas de `[[Conceito]]`, nunca conteúdo de
@@ -60,12 +69,33 @@ MOC Livros.md
   opcional sem conteúdo real é omitida inteira. Se o usuário pedir pra editar
   uma nota tech-study já existente, encontre-a pelo `id_obsidian` informado
   (nunca por busca/match de título) e só altere conteúdo dentro do par de
-  marcadores da seção certa.
+  marcadores da seção certa. Fotos são lidas pro conteúdo mas só as marcadas
+  com "salvar" (ou equivalente) no bruto são guardadas em `fotos/` e embedadas
+  — as demais são deletadas após compilação.
+- **`anotacoes-tech/*.md`**: cada anotação gerada pela skill
+  `formatar-anotacoes` (ver abaixo) é sempre um arquivo novo, no mesmo
+  esquema de identificação de `tech-study-diario/` (`id_obsidian` +
+  `id_pai`). A diferença é de propósito, não de estrutura: essa nota **não**
+  é material de estudo com síntese e autoteste — é anotação **literal no
+  conteúdo**: a skill nunca resume, corta, adiciona ou reordena uma ideia
+  do usuário, nem completa lacuna com conhecimento externo. Mas a
+  **redação** é trabalhada de verdade — correção de português em sentido
+  amplo (gíria, coesão, coerência) e parágrafos quebrados para leitura
+  fluida, sem nunca mudar sentido, ordem ou nível de detalhe. Se o bruto for
+  raso, a nota fica igualmente rasa — isso é esperado, não um defeito da
+  skill. Exceção ao "nunca explicar": foto **não marcada** para salvar (que
+  é deletada ao final) tem seu conteúdo explicado em texto, não só
+  transcrito — ver skill para detalhes. O corpo tem uma seção única, "📝
+  Conteúdo"; igual a `tech-study-diario/`, só a seção entre
+  `%%--- INÍCIO AUTO-GERADO ---%%` / `%%--- FIM AUTO-GERADO ---%%` é escrita
+  pela skill, e `## ✍️ Notas minhas` é espaço livre do usuário.
 - **`templates/*.md`**: só referência de estrutura (frontmatter + seções).
   Nunca preencher um template com placeholders e deixar assim — o arquivo
   final não pode conter `{{}}`.
 - **`fotos/`**: fotos citadas nas notas brutas, renomeadas
-  `foto yyyy-mm-dd hh-mm-ss.ext` pela data do próprio arquivo de imagem.
+  `foto-yyyy-mm-dd-hh-mm-ss.ext` pela data do próprio arquivo de imagem —
+  tudo ligado por traço, sem espaço nenhum no nome (espaço no nome do
+  arquivo já quebrou embed de foto por falta de `< >` no link).
   Pasta gitignored (não vale a pena versionar). Foto é **material de
   estudo**: o conteúdo de toda imagem é lido e vira texto nas seções da nota
   tech-study. O embed é que é a exceção — só as fotos que o usuário marcou
@@ -90,6 +120,21 @@ MOC Livros.md
    despeja informação crua — a formatação bonita fica por conta da skill,
    não do usuário no calor da hora. Pode ter múltiplas sessões brutas de uma
    vez; a skill processa todas de puxadinha.
+
+## O fluxo de anotação (não-estudo)
+
+Reaproveita o mesmo bruto (`nota bruta tech.md` e variantes, mesmo template),
+mas serve a um propósito diferente: registrar algo literal (specs, decisões,
+referência) sem a IA sintetizar ou interpretar nada.
+
+1. O usuário escreve o bruto normalmente, do jeito de sempre.
+2. Ativa a skill `formatar-anotacoes` (`.claude/skills/formatar-anotacoes/`)
+   com `/formatar-anotacoes <caminho do bruto>`, ou sem argumento (a skill
+   pergunta qual arquivo usar). Diferente de `formatar-nota-estudo`, processa
+   **um bruto por vez**, nunca varre a raiz procurando todos.
+3. Compila em `anotacoes-tech/`, linkando/criando conceitos como na outra
+   skill, mas copiando o conteúdo do bruto **literalmente** (só corrigindo
+   português) em vez de resumir/reescrever. Apaga o bruto ao final.
 
 ## Princípios gerais ao editar este vault
 
