@@ -1,1 +1,6 @@
 fotos/
+
+# Estado da interface do Obsidian (abas e painéis abertos, último arquivo
+# visto). Muda a cada uso do vault e não é configuração de verdade — o resto
+# do .obsidian/ continua versionado.
+.obsidian/workspace.json
