@@ -4,17 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "93f077d8142c3f8e",
+        "id": "0010a55adec6bbd1",
         "type": "tabs",
         "children": [
           {
-            "id": "2d7f92d98e55cb40",
+            "id": "f396344a513ed016",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "anotacoes-tech/Dicas e regras do projeto de bloco.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "Dicas e regras do projeto de bloco"
             }
           }
         ]
@@ -37,7 +42,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -49,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#livro  ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 288.70001220703125
   },
   "right": {
     "id": "b17852089b58122f",
@@ -191,47 +198,54 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "2d7f92d98e55cb40",
+  "active": "f396344a513ed016",
   "lastOpenFiles": [
-    "Objetivos Tech Pessoal.md",
-    "tech-study-diario/Tipos primitivos, variáveis e conversões em Java.md",
-    "README.md",
-    "templates/Template moc area.md",
-    "templates/Template livro.md",
-    "templates/Template conceito.md",
-    "templates/Template capítulo.md",
+    "nota bruta tech (projeto de extensao).md",
+    "anotacoes-tech/Dicas e regras do projeto de bloco.md",
+    "templates/template-tech-notes.md.tmp.11204.4a2597b96037",
+    "templates/template-tech-study.md.tmp.11204.a144f327958d",
+    "templates/template-tech-notes.md.tmp.11204.bd44e9c534c7",
+    "templates/Template nota bruta tech.md.tmp.11204.a01b5e96a40f",
+    "CLAUDE.md.tmp.11204.d50063bf1da8",
+    "tech-study-diario/Funções, rotinas e exceções em C#.md.tmp.11204.732741c12ada",
+    "tech-study-diario/sedroS3Xe",
+    "anotacoes-tech/sedy2TKs8",
+    "fotos/foto-2026-08-06-21-47-15.png",
+    "fotos/foto-2026-08-06-20-52-51.png",
+    "fotos/foto-2026-08-01-10-33-52.png",
+    "fotos/foto-2026-08-01-10-25-32.png",
+    "fotos/foto-2026-08-01-10-24-24.png",
+    "fotos/foto-2026-08-01-09-41-03.png",
+    "fotos/foto-2026-07-30-20-56-08.png",
+    "fotos/foto-2026-07-30-20-47-14.png",
+    "fotos/foto-2026-07-28-21-21-53.png",
+    "CLAUDE.md.tmp.11204.b4a3340ed9b7",
+    "tech-study-diario/DateTime e controle de fluxo em C#.md",
+    "nota bruta tech 10.md",
+    "templates/template-tech-notes.md",
+    "templates/template-tech-study.md",
+    "templates/Template nota bruta tech.md",
+    "nota bruta tech 5.md",
+    "nota bruta tech 2 (feita).md",
+    "Pasted image 20260812210207.png",
+    "nota bruta tech 3.md",
+    "tech-study-diario/Classes e objetos em C#.md",
+    "tech-study-diario/Classes e objetos em C#.md.tmp.28248.84427a5b9823",
+    "moc areas/Produtividade.md",
+    "conceitos/Projeto de Bloco.md",
     "moc areas/Backend.md",
     "moc areas/DevOps.md",
-    "moc areas/Infra.md",
-    "moc areas/Produtividade.md",
-    "conceitos/Obsidian.md",
-    "conceitos/Java.md",
-    "conceitos/Claude IA.md",
-    "conceitos/Docker.md",
-    "templates/template-tech-study.md",
-    "CLAUDE.md",
-    "MOC Livros.md",
-    "templates/Template nota bruta tech.md",
-    "nota bruta tech.md",
-    "tech-study-diario/Tipos primitivos, variáveis e conversões em Java.md.tmp.23496.8104110a2e12",
-    "tech-study-diario/Tipos primitivos, variáveis e conversões em Java.md.tmp.23496.b3a2fc5d8c13",
-    "conceitos/Java.md.tmp.23496.61a7b81a8984",
-    "moc areas/Backend.md.tmp.23496.c26953043cd5",
-    "Pasted image 20260727211734.png",
-    "MOC Livros.md.tmp.19868.b92c2c6b2a0c",
-    "moc areas/IA.md.tmp.19868.64331e7a0df3",
-    "conceitos/Obsidian.md.tmp.19868.31042f8d8863",
-    "conceitos/Claude IA.md.tmp.19868.7b9db63e8ede",
-    "templates/template-tech-study.md.tmp.19868.fd80bcf28e8e",
-    "moc areas/Infra.md.tmp.19868.071c40e25b23",
-    "tech-study-diario/Comandos Docker.md",
-    "tech-study-diario/Organizaçao no obsidian.md",
     "moc areas/IA.md",
+    "moc areas/INFNET.md",
+    "moc areas/Infra.md",
+    "nota bruta tech 2.md",
+    "templates/Template conceito.md",
+    "tech-study-diario/Tipos primitivos, variáveis e conversões em Java.md",
+    "tech-study-diario/Métodos e operadores em Java.md",
+    "tech-study-diario/Funções, rotinas e exceções em C#.md",
+    "tech-study-diario/Estrutura de controle de fluxo em Java.md",
+    "templates/Template livro.md",
     "conceitos/Untitled.canvas",
-    "tech-study-diario/Estou estudando comandos de docker.md",
-    "conceitos/Claude.md",
-    "conceitos/Azure DevOps.md",
-    "Pasted image 20260710002929.png",
     "Untitled.canvas"
   ]
 }

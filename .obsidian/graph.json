@@ -1,5 +1,5 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
@@ -34,9 +34,16 @@
         "a": 1,
         "rgb": 9813564
       }
+    },
+    {
+      "query": "tag:#tech-notes  ",
+      "color": {
+        "a": 1,
+        "rgb": 11473426
+      }
     }
   ],
-  "collapse-display": false,
+  "collapse-display": true,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
@@ -46,6 +53,6 @@
   "repelStrength": 11.0810810810811,
   "linkStrength": 1,
   "linkDistance": 169,
-  "scale": 1,
+  "scale": 0.7132754626224405,
   "close": true
 }
