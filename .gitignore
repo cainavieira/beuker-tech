@@ -1,6 +1,10 @@
 fotos/
 
 # Estado da interface do Obsidian (abas e painéis abertos, último arquivo
-# visto). Muda a cada uso do vault e não é configuração de verdade — o resto
-# do .obsidian/ continua versionado.
+# visto). Muda a cada uso do vault e não é configuração de verdade.
 .obsidian/workspace.json
+
+# Código dos plugins de terceiros — não é meu, e cada atualização vira um
+# diff gigante de JS minificado. A lista do que eu uso fica em
+# .obsidian/community-plugins.json (versionado): basta reinstalar por ela.
+.obsidian/plugins/
