@@ -47,7 +47,7 @@ Nunca use o campo cru como nome de arquivo.
 A confirmação existe para calibrar o gosto do usuário, não para sempre. Assim
 que o histórico tiver **5 títulos consecutivos aceitos sem nenhuma
 correção**, pare de bloquear: proponha o título, siga em frente e mostre qual
-foi no resumo final do Passo 3, para ele contestar se quiser. Se em algum
+foi no resumo final do Passo 5, para ele contestar se quiser. Se em algum
 momento ele corrigir um título de novo, a contagem zera e a confirmação volta
 a ser obrigatória.
 
@@ -61,3 +61,8 @@ registrado do usuário ganha das regras).
 | Campo do bruto | Título proposto | Título final | Aceito sem correção? |
 | --- | --- | --- | --- |
 | Java tipagem, tipos de dados, e variaveis. | Tipos primitivos, variáveis e conversões em Java | Tipos primitivos, variáveis e conversões em Java | Sim |
+| Estamos aprendendo fundamento de C# como funçoes, subrotinas, depuraçao e exceçoes. | Funções, subrotinas, depuração e exceções em C# | Funções, rotinas e exceções em C# | Não |
+| Métodos e operadores em Java | Métodos, operadores e precedência em Java | Métodos e operadores em Java | Não |
+| Date  e controle de fluxo em C# | DateTime e controle de fluxo em C# | DateTime e controle de fluxo em C# | Sim |
+| Estrutura de Controle de Fluxo em Java | Estrutura de controle de fluxo em Java | Estrutura de controle de fluxo em Java | Sim |
+| Classes e Objetos em C# | Classes e objetos em C# | Classes e objetos em C# | Sim |

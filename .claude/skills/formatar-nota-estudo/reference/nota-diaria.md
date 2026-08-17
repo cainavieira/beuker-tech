@@ -29,6 +29,55 @@ mencione a origem no corpo, a menos que o usuário escreva isso no bruto.
 **Nunca copie o bruto cru.** Anotação solta e mal formatada do bruto vira
 texto coeso nas seções certas.
 
+### Melhorar sim, inventar não
+
+Reescrever para ficar mais claro é o trabalho principal da skill, e às vezes
+isso significa acrescentar algo que o bruto não disse com todas as letras. A
+fronteira não é "acrescentou ou não" — é **se o acréscimo continua dentro do
+que a sessão cobriu**.
+
+Melhoria legítima, faça sem medo:
+
+- Deixar mais clara uma explicação que o bruto deu de forma confusa ou pela
+  metade.
+- Corrigir erro factual do bruto (nome de comando trocado, sintaxe errada,
+  termo usado fora do lugar). Quando o erro for do tipo que o usuário pode
+  repetir, vale registrar a correção em 📖 em vez de apagá-la em silêncio.
+- Tornar explícita uma conexão que ficou implícita entre duas coisas que o
+  próprio bruto citou.
+- Completar a sintaxe de um comando citado pela metade, quando o bruto ou a
+  foto mostram qual é.
+- Organizar melhor: agrupar o que está espalhado, dar subtítulo, escolher
+  entre prosa e lista conforme a regra abaixo.
+
+Invenção, nunca:
+
+- Puxar tópico, comando ou conceito que a sessão não tocou, mesmo sendo o
+  "próximo assunto natural" ou algo que combinaria bem ali.
+- Encher seção rasa com definição genérica de documentação só para ela não
+  ficar curta. Seção curta é resposta honesta a bruto curto.
+- Afirmar detalhe que não está no bruto nem na foto (versão, flag, valor
+  padrão, comportamento em caso de erro), ainda que você saiba que é verdade.
+
+**O teste é sempre o mesmo: a nota mente sobre o que o usuário estudou?** Se
+o acréscimo faz ele reler daqui a três meses e concluir que aprendeu algo que
+nunca viu na sessão, está errado — mesmo estando factualmente correto. Na
+dúvida, o lugar da lacuna é 🧠 "Dúvidas / pontos a aprofundar", não uma frase
+inventada em 📖.
+
+### Links sobrevivem sempre intactos
+
+Única exceção rígida à regra acima. Qualquer link colado no bruto — URL
+solta (`https://...`), markdown (`[texto](url)`), referência a vídeo/doc/
+repositório com URL junto — nunca é reescrito, parafraseado, encurtado,
+"limpo" (removendo query string, `www.`, barra final etc.) ou dropado
+durante a reescrita da prosa ao redor. Copie a URL caractere por caractere,
+exatamente como está no bruto, não importa em qual seção ela acabe (📖, 🔗,
+💡, onde for) nem se está embutida no meio de um parágrafo que vai ser
+resumido — extraia e preserve o link, resuma só o texto ao redor dele. Se
+não estiver claro se um trecho colado é uma URL válida ou só texto parecido
+com uma, trate como link e preserve.
+
 ### Bullet e parágrafo são os dois formatos válidos
 
 Isto é um resumo pessoal escrito pelo usuário, não um relatório: **parágrafo
@@ -97,8 +146,9 @@ sempre checkbox, porque precisam ser varridos por busca entre as notas.
   **não** exija nem pergunte página, capítulo, número de slide ou timestamp;
   o usuário não anota esse nível de detalhe e cobrar isso só atrapalha a
   captura. Se ele escrever a localização por conta própria, preserve; se não,
-  a fonte sozinha basta. Se o bruto não citou fonte nenhuma, a seção é
-  omitida (é opcional).
+  a fonte sozinha basta. Se o link vier junto, aplica a regra de "Links
+  sobrevivem sempre intactos" acima — copiado exato, nunca alterado. Se o
+  bruto não citou fonte nenhuma, a seção é omitida (é opcional).
 - **🔁 Próximos passos** — checkbox `- [ ]`, mesma razão de 🧠. Só se o bruto
   indicar algo concreto; não invente próximo passo.
 - **❓ Autoteste** — 3 a 5 perguntas de recuperação ativa geradas a partir de

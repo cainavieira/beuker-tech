@@ -124,7 +124,7 @@ inicial quando não há nada em execução.
   que o container não está em execução → `exec` exige container up: rodar
   `docker start <id>` antes, ou criar um novo com `docker run`.
 
-  ![erro do exec em container parado](<fotos/foto 2026-07-24 15-12-03.png>)
+  ![erro do exec em container parado](fotos/foto-2026-07-24-15-12-03.png)
 %%--- FIM AUTO-GERADO ---%%
 
 ## 🧠 Dúvidas / pontos a aprofundar

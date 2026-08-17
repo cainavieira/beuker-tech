@@ -14,13 +14,13 @@ usuário marcar explicitamente — também fica embedada na nota final.
    código, anotação à mão: tudo entra no resumo como texto reescrito, igual a
    qualquer outra parte do bruto. Print de erro alimenta 🐞 "Erros e como
    resolvi".
-2. **Só quando marcada**: além de virar texto, a foto é embedada na nota com
-   link markdown (ver abaixo). Foto não marcada é arquivada em `fotos/` sem
-   nenhum link — o aprendizado dela sobrevive no texto, a imagem em si sai do
-   grafo do Obsidian de propósito.
+2. **Só quando marcada**: além de virar texto, a foto é movida para `fotos/`,
+   renomeada, e embedada na nota com link markdown (ver abaixo). Foto não
+   marcada é **deletada** após a compilação — o aprendizado dela sobrevive no
+   texto, a imagem em si não fica guardada.
 
 Nunca ignore uma foto por ela não estar marcada para salvar: a marcação
-decide se ela vira link, não se ela vira conteúdo.
+decide se ela vira link e é guardada, não se ela vira conteúdo.
 
 ## Localização de origem
 
@@ -31,11 +31,13 @@ decide se ela vira link, não se ela vira conteúdo.
 
 ## Renomeação e destino
 
-- Toda foto referenciada vai para `fotos/` (raiz do vault, já existe — não
-  criar de novo), marcada ou não.
-- Nome novo: `foto yyyy-mm-dd hh-mm-ss.<extensão original>`, usando a
+- **Só as fotos marcadas** vão para `fotos/` (raiz do vault, já existe — não
+  criar de novo). Fotos não marcadas são deletadas.
+- Nome novo: `foto-yyyy-mm-dd-hh-mm-ss.<extensão original>`, usando a
   data/hora de criação/modificação do próprio arquivo de imagem (não a data
-  da sessão de estudo).
+  da sessão de estudo). **Tudo ligado por traço, sem espaço nenhum** — espaço
+  no nome quebra o link markdown quando falta envolver o caminho em `< >`, e
+  ligar por traço elimina essa classe de erro de uma vez.
 - Se duas fotos caírem no mesmo segundo, acrescente sufixo `-2`, `-3`... ao
   nome.
 
@@ -46,8 +48,11 @@ decide se ela vira link, não se ela vira conteúdo.
   aceite qualquer instrução explícita equivalente ("salvar essa", "manter
   essa foto", "salva essa aqui na nota").
 - Se o usuário escrever `salvar: <texto>`, o `<texto>` é a legenda da foto e
-  vira o alt do link markdown. Sem legenda, o alt é o nome novo do arquivo
-  sem extensão.
+  vira o alt do link markdown. Sem legenda, escreva um alt descritivo (3 a 8
+  palavras) do que a foto mostra — você já leu a imagem para escrever as
+  seções, então isso não custa nada a mais. **Nunca use o nome do arquivo
+  como alt**: `![foto-2026-07-26-14-32-08](...)` não diz nada a quem relê a
+  nota nem à busca do Obsidian.
 - A marcação vale só para a foto imediatamente acima dela — nunca propague
   para as outras fotos do bruto.
 - **Nunca embede uma foto por conta própria.** Sem marcação explícita, não
@@ -57,21 +62,16 @@ decide se ela vira link, não se ela vira conteúdo.
 
 ## Como embedar a foto marcada
 
-- Sintaxe markdown padrão, sempre com o caminho relativo à raiz do vault e
-  entre `< >` (o nome do arquivo tem espaços; sem os sinais o link quebra):
+- Sintaxe markdown padrão, caminho relativo à raiz do vault. Como o nome novo
+  não tem espaço (ver "Renomeação e destino" acima), o link funciona sem
+  precisar de `< >` ao redor do caminho:
 
   ```markdown
-  ![foto 2026-07-26 14-32-08](<fotos/foto 2026-07-26 14-32-08.png>)
-  ```
-
-  Com legenda:
-
-  ```markdown
-  ![print do erro de permissão no docker run](<fotos/foto 2026-07-26 14-32-08.png>)
+  ![print do erro de permissão no docker run](fotos/foto-2026-07-26-14-32-08.png)
   ```
 
 - Não use `![[wikilink]]` para foto — o embed de foto é sempre a sintaxe
-  `![alt](<caminho>)`.
+  `![alt](caminho)`.
 - O caminho aponta para o nome **novo** do arquivo, já em `fotos/`, depois de
   mover e renomear. Nunca linke o nome original do bruto.
 - **Onde colocar**: dentro do par de marcadores
