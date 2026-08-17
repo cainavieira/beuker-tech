@@ -31,8 +31,9 @@ anota tudo cru, rápido e feio, e a IA formata depois.
 - `MOC Livros.md` + livros/capítulos — trilha paralela pra registrar
   leitura de livros técnicos.
 - `templates/` — modelos de referência pra cada tipo de nota.
-- `fotos/` — fotos organizadas por data, fora do grafo do Obsidian (não
-  versionado no git).
+- `fotos/` — fotos que você marcou explicitamente para salvar ("salvar" no
+  bruto), organizadas por data, fora do grafo do Obsidian (não versionado no git).
+  Fotos lidas pro conteúdo mas não marcadas são deletadas após compilação.
 
 ## Como usar
 
